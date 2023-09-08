@@ -13,10 +13,18 @@ local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 -- configure null_ls
 null_ls.setup({
+  -- work around to fix multiple encoding error with ccls
+  on_init = function(new_client, _)
+    new_client.offset_encoding = "utf-32"
+  end,
   -- setup formatters & linters
   sources = {
     --  to disable file types use
     --  "formatting.prettier.with({disabled_filetypes = {}})" (see null-ls docs)
+    formatting.clang_format, -- c formatter
+    formatting.black, -- python formatter
+    formatting.isort, -- python formatter
+    formatting.verible, -- verilog formatter
     formatting.prettier, -- js/ts formatter
     formatting.stylua, -- lua formatter
     diagnostics.eslint_d.with({ -- js/ts linter

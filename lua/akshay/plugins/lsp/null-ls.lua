@@ -24,7 +24,7 @@ null_ls.setup({
     formatting.clang_format, -- c formatter
     formatting.black, -- python formatter
     formatting.isort, -- python formatter
-    formatting.verible, -- verilog formatter
+    -- diagnostics.verible, -- verilog formatter
     formatting.prettier, -- js/ts formatter
     formatting.stylua, -- lua formatter
     diagnostics.eslint_d.with({ -- js/ts linter

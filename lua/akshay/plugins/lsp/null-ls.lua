@@ -11,12 +11,21 @@ local diagnostics = null_ls.builtins.diagnostics -- to setup linters
 -- to setup format on save
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
+local notify = vim.notify
+vim.notify = function(msg, ...)
+  if msg:match("warning: multiple different client offset_encodings") then
+    return
+  end
+
+  notify(msg, ...)
+end
+
 -- configure null_ls
 null_ls.setup({
   -- work around to fix multiple encoding error with ccls
-  on_init = function(new_client, _)
-    new_client.offset_encoding = "utf-32"
-  end,
+  -- on_init = function(new_client, _)
+  --   new_client.offset_encoding = "utf-32"
+  -- end,
   -- setup formatters & linters
   sources = {
     --  to disable file types use

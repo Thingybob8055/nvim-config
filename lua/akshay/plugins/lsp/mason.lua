@@ -16,6 +16,11 @@ if not mason_null_ls_status then
   return
 end
 
+local mason_dap_status, mason_dap = pcall(require, "mason-nvim-dap")
+if not mason_dap_status then
+  return
+end
+
 -- enable mason
 mason.setup()
 
@@ -32,6 +37,7 @@ mason_lspconfig.setup({
     "texlab",
     "verible",
     "svlangserver",
+    "rust_analyzer",
   },
   -- auto-install configured servers (with lspconfig)
   automatic_installation = true, -- not the same as ensure_installed
@@ -50,4 +56,10 @@ mason_null_ls.setup({
   },
   -- auto-install configured formatters & linters (with null-ls)
   automatic_installation = true,
+})
+
+mason_dap.setup({
+  ensure_installed = {
+    "codelldb",
+  },
 })

@@ -105,6 +105,11 @@ lspconfig["texlab"].setup({
 -- on_attach = on_attach,
 -- })
 
+-- lspconfig["clangd"].setup({
+--   capabilities = capabilities,
+--   on_attach = on_attach,
+-- })
+--
 -- configure tailwindcss server
 lspconfig["tailwindcss"].setup({
   capabilities = capabilities,
@@ -138,3 +143,19 @@ lspconfig["lua_ls"].setup({
     },
   },
 })
+
+-- local util = require "lspconfig/util"
+--
+-- lspconfig.rust_analyzer.setup({
+--   capabilities = capabilities,
+--   on_attach = on_attach,
+--   filetypes = { "rust" },
+--   root_dir = util.root_pattern("Cargo.toml"),
+--   settings = {
+--     ["rust_analyzer"] = {
+--       cargo = {
+--         allFeatures = true,
+--       },
+--     },
+--   },
+-- })

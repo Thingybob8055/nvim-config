@@ -1,5 +1,8 @@
 # Neovim Config
 
+## Pre-requisites
+
+
 ## TODO
 
 - Cheat Sheet

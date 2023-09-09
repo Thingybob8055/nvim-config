@@ -144,6 +144,19 @@ return packer.startup(function(use)
     },
   })
 
+  -- image.nvim
+  use("3rd/image.nvim")
+
+  use("rust-lang/rust.vim")
+
+  use("simrat39/rust-tools.nvim")
+
+  use("mfussenegger/nvim-dap")
+
+  use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } })
+
+  use("jay-babu/mason-nvim-dap.nvim")
+
   if packer_bootstrap then
     require("packer").sync()
   end

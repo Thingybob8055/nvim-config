@@ -61,3 +61,42 @@ keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if ne
 keymap.set("n", "<leader>gg", ":LazyGit<CR>")
 
 keymap.set("n", "<leader>co", ":terminal<CR>")
+
+-- DAP
+
+keymap.set("n", "<F4>", ":lua require('dapui').toggle()<CR>")
+keymap.set("n", "<F5>", ":DapToggleBreakpoint<CR>")
+keymap.set("n", "<F9>", ":DapContinue<CR>")
+
+keymap.set("n", "<F1>", ":DapStepOver<CR>")
+keymap.set("n", "<F2>", ":DapStepInto<CR>")
+keymap.set("n", "<F3>", ":DapStepOut<CR>")
+
+-- keymap.set("n", "<leader>dsc", ":lua require('dap').continue()<CR>")
+-- keymap.set("n", "<leader>dsv", ":lua require('dap').step_over()<CR>")
+-- keymap.set("n", "<leader>dsi", ":lua require('dap').step_into()<CR>")
+-- keymap.set("n", "<leader>dso", ":lua require('dap').step_out()<CR>")
+
+keymap.set("n", "<leader>dhh", ":lua require('dap.ui.variables').hover()<CR>")
+keymap.set("v", "<leader>dhv", ":lua require('dap.ui.variables').visual_hover()<CR>")
+
+keymap.set("n", "<leader>duh", ":lua require('dap.ui.widgets').hover()<CR>")
+keymap.set(
+  "n",
+  "<leader>duf",
+  ":lua local widgets=require('dap.ui.widgets');widgets.centered_float(widgets.scopes)<CR>"
+)
+
+-- keymap.set("n", "<leader>dro", ":lua require('dap').repl.open()<CR>")
+-- keymap.set("n", "<leader>drl", ":lua require('dap').repl.run_last()<CR>")
+
+-- keymap.set("n", "<leader>dbc", ":lua require('dap').set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>")
+-- keymap.set(
+-- "n",
+-- "<leader>dbm",
+-- ":lua require('dap').set_breakpoint({ nil, nil, vim.fn.input('Log point message: ') })<CR>"
+-- )
+-- keymap.set("n", "<leader>dbt", ":lua require('dap').toggle_breakpoint()<CR>")
+
+keymap.set("n", "<leader>dc", ":lua require('dap.ui.variables').scopes()<CR>")
+keymap.set("n", "<leader>di", ":lua require('dapui').toggle()<CR>")

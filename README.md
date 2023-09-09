@@ -4,6 +4,8 @@
 
 ![home-page](./images/home-page.png)
 
+![foo](./images/foo.png)
+
 ## Pre-requisites
 
 You need to install certain packages to make sure that the config works

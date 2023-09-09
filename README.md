@@ -8,3 +8,4 @@
 - Neorg
 - Rust Language LSP
 - Copilot
+- Debuggers

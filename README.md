@@ -109,3 +109,4 @@ I didn't have any clipboard issues on Wayland.
 - Copilot
 - Debuggers
 - Setup Script
+- Try Neovide

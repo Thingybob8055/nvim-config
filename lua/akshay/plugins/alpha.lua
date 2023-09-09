@@ -67,7 +67,7 @@ dashboard.section.buttons.val = {
   dashboard.button("f", "󰈞  Find File", ":Telescope find_files <CR>"),
   dashboard.button("b", "  Search Text", ":Telescope live_grep <CR>"),
   dashboard.button("c", "  Config", ":e $MYVIMRC <CR>"),
-  dashboard.button("i", "  Info", "<cmd>e ~/.config/CheatSheet.md<cr>"),
+  dashboard.button("i", "  Info", "<cmd>e ~/.config/nvim/Cheat-Sheet.md<cr>"),
   dashboard.button("u", "  Update Plugins", ":PackerSync<CR>"),
   dashboard.button("q", "  Quit", ":qa<CR>"),
 }

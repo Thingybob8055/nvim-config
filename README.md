@@ -2,22 +2,27 @@
 
 ## Images
 
+![home-page](./images/home-page.png)
+
 ## Pre-requisites
 
 You need to install certain packages to make sure that the config works
 completely.
 
 - Install a Nerd Font:
+
 https://www.nerdfonts.com/
 
 Recommended to use a true colour supported terminal such as kitty, alacritty etc
 
 - Python LSP Server
+
 Install python-lsp-server:
 ```bash
 sudo apt install python3-pylsp
 ```
 - `nodejs` and `npm`
+
 Required to install certain LSPs from `mason.nvim`
 
 Outdated version from Ubuntu 22.04 apt:
@@ -28,10 +33,12 @@ sudo apt install nodejs && npm
 If you want an updated version, follow this: [NodeSource Node.js Binary Distributions](https://github.com/nodesource/distributions)
 
 - `ccls` (C/C++ LSP)
+
 I chose to use `ccls` over `clangd` for my C/C++ LSP as it works with PlatformIO.
 ```bash
 sudo apt install ccls
 ```
+
 - Verilator
 ```bash
 sudo apt install verilator
@@ -39,10 +46,12 @@ sudo apt install verilator
 ```
 
 - Texlab
+
 I am using Texlab along with VimTex (installed via packer) for LaTeX LSP
 Installation instructions: [texlab github](https://github.com/latex-lsp/texlab)
 
 - Zathura (PDF Viewer)
+
 **Optional**
 VimTex can be configured to use any other PDF viewer such as Okular
 ```bash
@@ -50,6 +59,7 @@ sudo apt install zathura
 
 ```
 - LazyGit
+
 Used for git integration with NeoVim
 Installation Instructions here: [lazygit github](https://github.com/jesseduffield/lazygit)
 
@@ -89,3 +99,4 @@ rustup component add rustfmt
 - Rust Language LSP
 - Copilot
 - Debuggers
+- Setup Script

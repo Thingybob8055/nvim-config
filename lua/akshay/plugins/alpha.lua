@@ -7,7 +7,7 @@ end
 
 local function pick_color()
   local colors = { "String", "Identifier", "Keyword", "Number" }
-  return colors[1]
+  return colors[4]
 end
 
 local dashboard = require("alpha.themes.dashboard")

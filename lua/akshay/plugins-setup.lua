@@ -35,7 +35,10 @@ return packer.startup(function(use)
 
   -- use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
 
-  use("fneu/breezy")
+  -- use("fneu/breezy")
+
+  use("marko-cerovac/material.nvim")
+  vim.g.material_style = "darker"
 
   use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 

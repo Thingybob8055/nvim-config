@@ -97,6 +97,14 @@ sudo apt install xclip
 ```
 I didn't have any clipboard issues on Wayland.
 
+- `ripgrep` and `fzf`
+
+Needed for `nvim-telescope`
+```bash
+sudo apt install  ripgrep
+sudo apt install fzf
+```
+
 > [!IMPORTANT]  
 > For the debugger configuration, nvim-dap, check the files in `lua/akshay/plugins/dap.lua`
 and in `lua/akshay/plugins/lsp/rust-tools.lua` to make sure you have the right path

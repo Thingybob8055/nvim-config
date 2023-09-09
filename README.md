@@ -97,7 +97,11 @@ sudo apt install xclip
 ```
 I didn't have any clipboard issues on Wayland.
 
-<!-- For debugger, check path -->
+> [!IMPORTANT]  
+> For the debugger configuration, nvim-dap, check the files in `lua/akshay/plugins/dap.lua`
+and in `lua/akshay/plugins/lsp/rust-tools.lua` to make sure you have the right path
+for lldb. I used the one from `mason.nvim`, If this is used, double check the username
+in the path.
 
 ## TODO
 

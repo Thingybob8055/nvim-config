@@ -147,15 +147,23 @@ return packer.startup(function(use)
   -- image.nvim
   use("3rd/image.nvim")
 
+  -- official rust tool, used for autoformatting
   use("rust-lang/rust.vim")
 
+  -- rust LSP
   use("simrat39/rust-tools.nvim")
 
+  -- Debug Adapter Protocol
   use("mfussenegger/nvim-dap")
 
+  -- UI for DAP
   use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } })
 
+  -- Manage DAP in Mason
   use("jay-babu/mason-nvim-dap.nvim")
+
+  -- multi line cursor editing
+  use("mg979/vim-visual-multi")
 
   if packer_bootstrap then
     require("packer").sync()

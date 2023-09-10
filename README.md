@@ -114,6 +114,10 @@ and in `lua/akshay/plugins/lsp/rust-tools.lua` to make sure you have the right p
 for lldb. I used the one from `mason.nvim`, If this is used, double check the username
 in the path.
 
+## Installation
+
+Installation is very simple, copy the repo contents to `~/.config/nvim/`
+
 ## Structure
 
 All installed plugins can be found in [plugins-setup.lua](./lua/akshay/plugins-setup.lua)

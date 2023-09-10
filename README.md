@@ -102,7 +102,7 @@ I didn't have any clipboard issues on Wayland.
 
 - `ripgrep` and `fzf`
 
-Needed for `nvim-telescope`
+Needed for `Telescope.nvim`
 ```bash
 sudo apt install  ripgrep
 sudo apt install fzf
@@ -120,14 +120,33 @@ in the path.
 
 ## Structure
 
-- [init.lua](./init.lua)
-- [lua](./lua/)
-    - [akshay](./lua/akshay/)
-        - [core](./lua/akshay/core/)
-            - [colorscheme.lua](./lua/akshay/core/colorscheme.lua)
-            - [keymaps.lua](./lua/akshay/core/colorscheme.lua)
-            - [options.lua](./lua/akshay/core/options.lua)
-        - [plugins](./lua/akshay/plugins/)
+All installed plugins can be found in [plugins-setup.lua](./lua/akshay/plugins-setup.lua)
+
+- [init.lua](./init.lua) - load all plugins and lua files
+- [lua/](./lua/)
+    - [akshay/](./lua/akshay/)
+        - [plugins-setup.lua](./lua/akshay/plugins-setup.lua) - `mason.nvim` configuration and all installed plugins
+        - [core/](./lua/akshay/core/)
+            - [colorscheme.lua](./lua/akshay/core/colorscheme.lua) - Neovim Theme
+            - [keymaps.lua](./lua/akshay/core/keymaps.lua) - Most keymaps defined here
+            - [options.lua](./lua/akshay/core/options.lua) - General options such as set relative numbering, clipboard etc
+        - [plugins/](./lua/akshay/plugins/)
+            - [alpha.lua](./lua/akshay/plugins/alpha.lua) - `alpha.nvim` configuration (Neovim landing page)
+            - [autopairs.lua](./lua/akshay/plugins/autopairs.lua) - `nvim-autopairs` configuration
+            - [comment.lua](./lua/akshay/plugins/comment.lua) - `Comment.nvim` configuration
+            - [dap.lua](./lua/akshay/plugins/dap.lua) - `nvim-dap` and `nvim-dap-ui` configuration
+            - [discord.lua](./lua/akshay/plugins/discord.lua) - `presence.nvim` configuration
+            - [gitsigns.lua](./lua/akshay/plugins/gitsigns.lua) - `gitsigns.nvim` configuration
+            - [image.lua](./lua/akshay/plugins/image.lua) - `image.nvim` configuration
+            - [lazygit.lua](./lua/akshay/plugins/lazygit.lua) - `lazygit.nvim` configuration
+            - [lualine.lua](./lua/akshay/plugins/lualine.lua) - `lualine.nvim` configuration
+            - [nvim-cmp.lua](./lua/akshay/plugins/nvim-cmp.lua) - `nvim-cmp` configuration
+            - [nvim-tree](./lua/akshay/plugins/nvim-tree.lua) - `nvim-tree` configuration
+            - [sessions.lua](./lua/akshay/plugins/sessions.lua) - `neovim-session-manager` configuration
+            - [telescope.lua](./lua/akshay/plugins/telescope.lua) - `Telescope.nvim` configuration
+            - [treesitter.lua](./lua/akshay/plugins/treesitter.lua) - `nvim-treesitter` configuration
+            - [vimtex.lua](./lua/akshay/plugins/vimtex.lua) - VimTex configuration
+                - [lsp/](./lua/akshay/plugins/lsp/)
 
 ## Extending
 

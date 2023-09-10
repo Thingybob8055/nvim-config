@@ -114,15 +114,12 @@ and in `lua/akshay/plugins/lsp/rust-tools.lua` to make sure you have the right p
 for lldb. I used the one from `mason.nvim`, If this is used, double check the username
 in the path.
 
-## Features 
-
-
-
 ## Structure
 
 All installed plugins can be found in [plugins-setup.lua](./lua/akshay/plugins-setup.lua)
 
 - [init.lua](./init.lua) - load all plugins and lua files
+- [Cheat-Sheet.md](./Cheat-Sheet.md) - A seperate markdown for list of keybinds
 - [lua/](./lua/)
     - [akshay/](./lua/akshay/)
         - [plugins-setup.lua](./lua/akshay/plugins-setup.lua) - `mason.nvim` configuration and all installed plugins
@@ -146,11 +143,26 @@ All installed plugins can be found in [plugins-setup.lua](./lua/akshay/plugins-s
             - [telescope.lua](./lua/akshay/plugins/telescope.lua) - `Telescope.nvim` configuration
             - [treesitter.lua](./lua/akshay/plugins/treesitter.lua) - `nvim-treesitter` configuration
             - [vimtex.lua](./lua/akshay/plugins/vimtex.lua) - VimTex configuration
+            - ***insert any future plugin additions***
                 - [lsp/](./lua/akshay/plugins/lsp/)
-
+                    - [ccls.lua](./lua/akshay/plugins/lsp/ccls.lua) - CCLS lsp configuration (C/C++ LSP)
+                    - [lspconfig.lua](./lua/akshay/plugins/lsp/lspconfig.lua) - Configuration for `nvim-lsp-config` and `cmp-nvim-lsp`, enable/disable LSPs and LSP keyboard shortcuts
+                    - [lspsaga.lua](./lua/akshay/plugins/lsp/lspsaga.lua) - `lspsaga.nvim` configuration
+                    - [mason.lua](./lua/akshay/plugins/lsp/mason.lua) - Configuration for `mason.nvim`, `mason-lsp-config.nvim`, `mason-null-ls.nvim` and `mason-nvim-dap`. Configuration for which LSPs, DAPs (debuggers), linters, and formatters to install automatically via `mason`
+                    - [mull-ls.lua](./lua/akshay/plugins/lsp/null-ls.lua) - Configuration for `null-ls.nvim` which allows to configure and enable formatters and linters installed from `mason`
+                    - [rustfmt.lua](./lua/akshay/plugins/lsp/rustfmt.lua) - Enable rust autoformatting provided by `rust.vim`
+                    - [rust-tools.lua](./lua/akshay/plugins/lsp/rust-tools.lua) - Configure LSP and Debugger path using `rust-tools.nvim`
+                    - ***Insert any future LSP additions***
 ## Extending
 
-Extending this config should be very simple. To install 
+Extending this config should be very simple: 
+- To install a plugin, add it in [plugins-setup.lua](./lua/akshay/plugins-setup.lua)
+- To configure an added plugin, make a file in [lua/akshay/plugins/](./lua/akshay/plugins/) and create a file for that plugin (with a relevant file name), and add configurations there for that specific plugin
+    - Don't forget to edit [init.lua](./init.lua) to load the new plugin
+- To modify/add keybinds, edit [lua/akshay/core/keymaps.lua](./lua/akshay/core/keymaps.lua)
+- To install additional LSPs, use `mason.nvim` (run `:MasonInstall`) and if you want them automatically installed, edit [mason.lua](./lua/akshay/plugins/lsp/mason.lua)
+    - To configure an LSP, create a file in [lua/akshay/plugins/lsp/](./lua/akshay/plugins/lsp/) with a relevant file name and add configurations there
+        - Load it by editing [init.lua](./init.lua) 
 
 ## Keybinds
 
@@ -223,14 +235,10 @@ Custom keybinds on top of normal Neovim
 
 ## TODO
 
-- Cheat Sheet
-- Finish README Page
+- Improve README Page
 - Neorg
 - Copilot
-- Debuggers
 - Setup Script
 - which-key.nvim
 - Plugins List
-- Structure
-- How to extend
 - Features and what works

@@ -147,7 +147,7 @@ All installed plugins can be found in [plugins-setup.lua](./lua/akshay/plugins-s
             - [telescope.lua](./lua/akshay/plugins/telescope.lua) - `Telescope.nvim` configuration
             - [treesitter.lua](./lua/akshay/plugins/treesitter.lua) - `nvim-treesitter` configuration
             - [vimtex.lua](./lua/akshay/plugins/vimtex.lua) - VimTex configuration
-            - ***insert any future plugin additions***
+            - ***Insert any future plugin additions***
                 - [lsp/](./lua/akshay/plugins/lsp/)
                     - [ccls.lua](./lua/akshay/plugins/lsp/ccls.lua) - CCLS lsp configuration (C/C++ LSP)
                     - [lspconfig.lua](./lua/akshay/plugins/lsp/lspconfig.lua) - Configuration for `nvim-lsp-config` and `cmp-nvim-lsp`, enable/disable LSPs and LSP keyboard shortcuts

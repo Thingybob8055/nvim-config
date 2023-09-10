@@ -117,12 +117,21 @@ in the path.
 ## Features 
 
 
+
 ## Structure
 
+- [init.lua](./init.lua)
+- [lua](./lua/)
+    - [akshay](./lua/akshay/)
+        - [core](./lua/akshay/core/)
+            - [colorscheme.lua](./lua/akshay/core/colorscheme.lua)
+            - [keymaps.lua](./lua/akshay/core/colorscheme.lua)
+            - [options.lua](./lua/akshay/core/options.lua)
+        - [plugins](./lua/akshay/plugins/)
 
 ## Extending
 
-
+Extending this config should be very simple. To install 
 
 ## Keybinds
 
@@ -196,7 +205,7 @@ Custom keybinds on top of normal Neovim
 ## TODO
 
 - Cheat Sheet
-- Finish REAdme Page
+- Finish README Page
 - Neorg
 - Copilot
 - Debuggers

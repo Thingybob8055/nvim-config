@@ -246,3 +246,4 @@ Custom keybinds on top of normal Neovim
 - which-key.nvim
 - Plugins List
 - Features and what works
+- Make instruction distro-agnostic

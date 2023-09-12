@@ -80,7 +80,7 @@ sudo apt install curl
 > Note: `curl` should be install out of the box
 And use `luarocks` to install `magick`
 ```bash
-luarocks install magick
+sudo luarocks install magick
 ```
 More details can be found in the github page for the plugin: [image.nvim github](https://github.com/3rd/image.nvim)
 

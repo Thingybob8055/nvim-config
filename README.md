@@ -18,6 +18,13 @@ https://www.nerdfonts.com/
 > [!NOTE]
 > Recommended to use a true colour supported terminal such as kitty, alacritty etc
 
+- **Python Virtual Environment**
+
+Python Virtial Environment (`venv`) is required to install some LSPs from Mason.
+```bash
+sudo apt install python3-venv
+```
+
 - **Python LSP Server**
 
 Install python-lsp-server:

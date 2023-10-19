@@ -165,6 +165,10 @@ return packer.startup(function(use)
   -- multi line cursor editing
   use("mg979/vim-visual-multi")
 
+  use("github/copilot.vim")
+
+  use("lukas-reineke/indent-blankline.nvim")
+
   if packer_bootstrap then
     require("packer").sync()
   end

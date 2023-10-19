@@ -162,6 +162,7 @@ All installed plugins can be found in [plugins-setup.lua](./lua/akshay/plugins-s
       - [discord.lua](./lua/akshay/plugins/discord.lua) - `presence.nvim` configuration
       - [gitsigns.lua](./lua/akshay/plugins/gitsigns.lua) - `gitsigns.nvim` configuration
       - [image.lua](./lua/akshay/plugins/image.lua) - `image.nvim` configuration
+      - [indent_backline.lua](./lua/akshay/plugins/indent_backline.lua) - `indent-blankline.nvim` configuration
       - [lazygit.lua](./lua/akshay/plugins/lazygit.lua) - `lazygit.nvim` configuration
       - [lualine.lua](./lua/akshay/plugins/lualine.lua) - `lualine.nvim` configuration
       - [nvim-cmp.lua](./lua/akshay/plugins/nvim-cmp.lua) - `nvim-cmp` configuration
